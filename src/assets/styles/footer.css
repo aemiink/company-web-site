@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.first-grid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.social-media-icons > svg{
+    width: 60px;
+    height: 60px;
+    margin-left:35px;
+}
+
+
+.social-media-icon:nth-child(1){
+    color: deeppink;
+}
+
+.social-media-icon:nth-child(3){
+    color: #0277B5;
+}
+
+.social-media-icon:nth-child(4){
+    color: blue;
+}
+
+.divider{
+    width: 3px;
+    height: 40vh;
+    background: #D8D5D5;
+}
+
+.second-grid{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+}
+
+
+.services-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    font-size: 17px;
+}
+
+li{
+    position: relative;
+    right: 2.2rem;
+    list-style-type: none;
+    align-items: start;
+    justify-content: flex-start;
+}
+
+.logos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+}
+
+@media (max-width: 768px){
+    .logos> img{
+        width: 50px;
+    }
+
+    .divider{
+        width: 80vw;
+        height: 2px;
+        background: #D8D5D5;
+    }
+}

@@ -1,0 +1,255 @@
+.App{
+  background-color: #EBEBEB;
+}
+.Home{
+  background-size: cover;
+  height: 100vh;
+}
+
+.buttons{
+  position: relative;
+  width: 20%;
+  height: 15%;
+  top: 85vh;
+  border: 1px solid #707070;
+  outline:none;
+  background-color: rgba(0, 0, 0, 0.4);
+  cursor:pointer;
+  transition: 0.5s;
+}
+
+.buttons:hover{
+  background-color: #0022FF;
+  transition: 0.5s;
+}
+
+.app-button{
+  background-image: url("assets/img/app.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: 0.5s;
+}
+
+.game-button{
+  background-image: url("assets/img/game.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: 0.5s;
+}
+
+
+.ai-button{
+  background-image: url("assets/img/ai.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: 0.5s;
+}
+.es-button{
+  background-image: url("assets/img/es.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: 0.5s;
+}
+.wd-button{
+  background-image: url("assets/img/wd.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: 0.5s;
+}
+
+.second-area{
+  height: 200vh;
+}
+
+.divider{
+  margin-top: 2%;
+  width: 3px;
+  height: 10vh;
+  background: #D8D5D5;
+}
+
+.second-area-home{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #fff;
+  width: 85vw;
+  border-radius: 15px;
+  font-family: 'Rajdhani', sans-serif;
+  margin-top: 5%;
+  margin-left: 5.5%;
+  padding: 2%;
+  z-index: 2;
+}
+.first-container{
+  width: 80%;
+  margin-left: 2%;
+
+}
+.second-container{
+  margin-left: 3%;
+
+}
+
+.sc-buttons{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.sc-buttons > button{
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  padding: 2% 2.5%;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+  background-color: #e6e6e6;
+  cursor: pointer;
+  margin: 2% 2%;
+
+}
+
+.sc-buttons > button:focus{
+  background-color: #0799B6;
+  color: #fff;
+}
+
+
+.first-container > h1{
+  font-size: 56px
+}
+
+.first-container > p{
+  font-size: 36px
+}
+
+.second-container > h1{
+  font-size: 56px
+}
+
+.background-divider{
+  position: relative;
+  bottom: 10vh;
+  width: 100vw;
+  height: 70vh;
+  background: #0A0240;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.third-container{
+  position: relative;
+  bottom: 28vw;
+  z-index: 2;
+  text-align: center;
+  color: #D8D5D5;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 40px;
+}
+
+.button-slide{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 1%;
+  outline: none;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.button-slide:focus{
+  background-color: #707070;
+
+}
+
+.first-page-area{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  text-align: start;
+  width: 85vw;
+  height: 37vw;
+  background-color: #fff;
+  margin: 5% 6.5% 6.5%;
+  font-size: large;
+}
+
+.page-one{
+  position: relative;
+  bottom: 9.3%;
+}
+
+.first-container-pages{
+  position: relative;
+  bottom: 10%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  background: #0022FF;
+  padding: 2%;
+  gap: 40px;
+}
+
+.first-container-pages > h3{
+  border: 1px solid #fff;
+  padding: 1%;
+  border-radius: 10px;
+  width: 10vw;
+}
+
+.first-container-pages > p{
+font-weight: 500;
+}
+
+.second-container-pages{
+  color: #0f0f0f;
+  padding: 1.5%;
+  margin: 5%;
+}
+
+.second-container-pages> h3{
+  display: inline;
+  border: 1px solid #0f0f0f;
+  padding: 1%;
+  border-radius: 8px;
+}
+
+.second-container-pages > p{
+  font-weight: 500;
+}
+
+.page-three > img{
+  position: relative;
+  top: 16%;
+}
+
+.page-enter {
+  opacity: 0;
+  transform: translateX(-100%); /* veya başka bir geçiş efekti */
+}
+.page-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 500ms ease-in-out; /* Geçiş süresi ve efekti */
+}
+.page-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+.page-exit-active {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 500ms ease-in-out;
+}
+
+.techblog{
+}

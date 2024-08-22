@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --text-color: #FAFAFA;
+    --button-default: #0799B6;
+    --default-font-family: 'Rajdhani', sans-serif;
+    --default-font-size: 19px;
+}
+
+.nav-bar{
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-family: var(--default-font-family);
+    font-weight: 500;
+    font-size: var(--default-font-size);
+    height: 0;
+    z-index: 55;
+
+}
+
+.nav-list> ul, .nav-last-area{
+    display: flex;
+    flex-direction: row;
+    color: var(--text-color);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+    gap:50px;
+}
+
+.nav-last-area > button {
+    padding: 9px 37px ;
+    border-radius: 22px;
+    background-color: var(--button-default);
+    color: var(--text-color);
+    font-family: var(--default-font-family);
+    font-weight: 500;
+    font-size: var(--default-font-size);
+    cursor: pointer;
+    border:none;
+    outline: none;
+    transition: 0.5s;
+}
+.nav-last-area > button:hover{
+    background-color: #06d4ff;
+    transition: 0.5s;
+}
+
+
+.nav-last-area > select {
+    background: none;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    font-size: 19px;
+    font-family: var(--default-font-family);
+    font-weight: 600;
+    font-size: var(--default-font-size);
+    color: var(--text-color);
+}
+.nav-last-area > option {
+    color: #282c34;
+}
+
+.search-icon {
+    cursor: pointer;
+}
+
+.burger-icon {
+    display: none; /* Varsayılan olarak gizle */
+    cursor: pointer;
+    flex-direction: column; /* İkonu dikey olarak hizala */
+}
+
+.burger-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-color); /* Çizgilerin rengini metin rengine ayarla */
+    margin: 5px 0;
+}
+
+/* Küçük ekranlarda burger menüsünü ve ikonunu göster, ana menüyü gizle */
+@media (max-width: 768px) {
+    /* veya istediğiniz breakpoint değeri */
+    .nav-list {
+        display: none;
+    }
+
+    .nav-list.open {
+        display: flex; /* Açık olduğunda flex olarak göster */
+        flex-direction: column; /* Menü öğelerini dikey olarak hizala */
+        position: absolute;
+        top: 100%; /* Navbar'ın hemen altına yerleştir */
+        left: 0;
+        width: 100%;
+        background-color: #282c34; /* Arka plan rengini navbar ile aynı yap */
+        z-index: 55; /* Üst üste binme sorunlarını önlemek için */
+    }
+
+    .burger-icon {
+        display: flex;
+    }
+}

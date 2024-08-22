@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.contact-us{
+    position: relative;
+    bottom: 15vh;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 35px;
+    background-color: #2C2C2C ;
+    color: #D5D5D5;
+}
+input{
+    color: white;
+}
+.contact-us > div> h1{
+    font-weight: 600;
+    margin: 7.5%;
+}
+.form-label-input{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 60px;
+    margin: 7.5%;
+}
+
+.form-label-input-message{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    margin: 7.5%;
+    gap: 100px;
+}
+
+.form-label-input-message>input:nth-child(1){
+    width: 425px;
+}
+.form-label-input-message>input:nth-child(2){
+    width: 905px;
+}
+
+.form-label-input > input, .form-label-input-message > input{
+    border:none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid  #707070;
+    width: 500px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size:20px;
+    font-weight: 600;
+}
+
+.form-label-input>input::placeholder{
+    font-size:20px;
+    font-weight: 600;
+}
+
+#fileInput {
+    display: none; /* Dosya seçme alanını gizle */
+}
+
+label[for="fileInput"] {
+    background-color: #D5D5D5; /* Yeşil arka plan */
+    background-image: url("../img/attachment.svg");
+    color: white;
+    padding: 10px 30px;
+    width: 45px;
+    height: 45px;
+    margin-left: 7.5%;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#fileStatus {
+    margin-left: 10px;
+}
+
+.form-label-checked{
+    font-size: 25px;
+    margin: 5% 7.5%;
+}
+.form-label-checked > input {
+    width: 20px;
+    height: 20px;
+    margin-right: 2%;
+}
+
+.infoArea{
+    font-size: 18px;
+    margin-top: 2% ;
+    color:#707070;
+}
+
+.submitButton{
+    margin: 2% 7.5%;
+    padding: 20px 50px;
+    border-radius: 30px;
+    background-color: #D5D5D5;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
