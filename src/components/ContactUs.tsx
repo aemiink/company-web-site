@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 import '../assets/styles/contactUs.css'
+import Card from "./Card";
 
-function ContactUs() {
+function ContactUs({experience}:any) {
     const [fileArea, setFileArea] = useState(false)
 
     const handleUpload = () => {
@@ -40,6 +41,13 @@ function ContactUs() {
                     </div>
                     <button className="submitButton" type="submit">Send Message</button>
                 </div>
+            </div>
+            <div>
+                {
+                    experience.map((item:any, index:number)=>(
+                       <Card id={item.id} text={item.text} photo={item.photo} name={item.name} title={item.title}/>
+                    ))
+                }
             </div>
         </div>
     );
