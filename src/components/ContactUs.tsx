@@ -41,10 +41,6 @@ function ContactUs() {
                     <button className="submitButton" type="submit">Send Message</button>
                 </div>
             </div>
-            <div>
-            <div>
-                </div>
-            </div>
         </div>
     );
 }

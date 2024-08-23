@@ -256,10 +256,6 @@ function Home() {
                     ) : null
                 }
             </div>
-
-            <div>
-
-            </div>
             <ContactUs/>
         </div>
     );
