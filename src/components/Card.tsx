@@ -1,5 +1,6 @@
 import React from 'react';
 import {Datas} from "./interfaces";
+import '../assets/styles/card.css'
 
 function Card({id, text, photo, name, title}:Datas) {
     return (

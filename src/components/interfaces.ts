@@ -1,4 +1,4 @@
-export interface Datas {
+export type Datas = {
     "id": number,
     "text": string,
     "photo": string,

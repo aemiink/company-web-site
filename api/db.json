@@ -1,26 +1,29 @@
 {
   "Contact": [
-      {
+    {
       "id": 1,
       "text": "The breadth of knowledge and understanding that desMoss \nhas within its walls allows us to leverage that expertise to\n make superior deliverables for our customers. \nWhen you work with desMoss , \nyou are working with the top \n1% of the aptitude and \nengineering excellence \nof the whole country.",
-      "photo": "",
-      "name": "Ahmet Emin",
+      "photo": "https://i.ibb.co/L56B8rL/1.png",
+      "name": "Ahmet Emin Kaya",
       "title": "Founder,  Head of App Segment"
     },
     {
       "id": 2,
       "text": "As the desMoss family, we want every work and \napplication we do to work on all phones \nwithout any optimization problems.\nIn this context, Swift language \nis the most suitable solution!",
-      "photo": "",
+      "photo": "https://i.ibb.co/FKn25LJ/2.png",
       "name": "Alex Dragon",
       "title": "iOS App Developer"
     },
     {
       "id": 3,
       "text": "Right from the start, we really liked desMoss’\ncommitment and engagement. They came \nto us with their best people to try to \nunderstand our context, our business idea, \nand developed the first prototype with us. \nThey were very professional and very \ncustomer oriented. I think, without \ndesMoss it probably would not have been \npossible to have such a successful product in \nsuch a short period of time.",
-      "photo": "",
+      "photo": "https://i.ibb.co/wK1Bdnw/3.png",
       "name": "Trasuqaet Morchline",
       "title": "Head of Management, ELEKS"
     }
 
   ]
 }
+
+
+
