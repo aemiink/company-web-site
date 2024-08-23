@@ -1,7 +1,9 @@
 import React, {useState} from 'react';
 import '../assets/styles/contactUs.css'
+import Card from "./Card";
+import { Datas } from './interfaces';
 
-function ContactUs() {
+function ContactUs({info, page, handleChangePage, handleChangePage1, handleChangePage2}:any) {
     const [fileArea, setFileArea] = useState(false)
 
     const handleUpload = () => {
@@ -41,9 +43,26 @@ function ContactUs() {
                     <button className="submitButton" type="submit">Send Message</button>
                 </div>
             </div>
-            <div>
-            <div>
-                </div>
+            <div className='commment-contact'>
+                {
+                    info.map((info:Datas, index:number)=>(
+                        index === 0 && page === "page1" ? 
+                        (
+                            <Card key={index} {...info} />
+                        ): 
+                        index === 1 && page === "page2" ?
+                        (
+                            <Card key={index} {...info} />
+                        ): 
+                        index === 2 && page === "page3" ?
+                        (
+                            <Card key={index} {...info} />
+                        ):(
+                            <div></div>
+                        )
+
+                    ))
+                }
             </div>
         </div>
     );

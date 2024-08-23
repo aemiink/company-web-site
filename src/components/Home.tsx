@@ -13,12 +13,30 @@ import newapp from '../assets/img/napp.svg'
 import meta from '../assets/img/metaverse.svg'
 import tech from '../assets/img/techBlog.svg'
 import ContactUs from "./ContactUs";
+import axios from 'axios';
 
 
 
 function Home() {
     const [activeButton, setActiveButton] = useState(app);
     const [page, setPage] = useState("page1")
+    const [info, setInfo] = useState([]);
+
+
+    const fetchInfo = async () => {
+        try{
+            const response = await axios.get('http://localhost:3000/Contact');
+            setInfo(response.data);
+        }
+        catch(error){
+            console.log(`I have a bug: ${error}`);
+        }
+    }
+
+    useEffect(()=>{
+        fetchInfo();
+    },[])
+    
 
     const handleMouseOver = (buttonName:any) => {
         setActiveButton(buttonName);
@@ -256,11 +274,7 @@ function Home() {
                     ) : null
                 }
             </div>
-
-            <div>
-
-            </div>
-            <ContactUs/>
+            <ContactUs info={info} page={page} handleChangePage={handleChangePage} handleChangePage2={handleChangePage2} handleChangePage1={handleChangePage1} />
         </div>
     );
 }
