@@ -19,10 +19,25 @@
     font-size: var(--default-font-size);
     height: 0;
     z-index: 55;
-
+    background:  #282c34;
+    transition: all 0.3s ease-in-out;
 }
 
-.nav-list> ul, .nav-last-area{
+.height-navbar{
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-family: var(--default-font-family);
+    font-weight: 500;
+    font-size: var(--default-font-size);
+    background-color: #282c34;
+    z-index: 55;
+}
+
+.nav-list> ul > div, .nav-last-area{
     display: flex;
     flex-direction: row;
     color: var(--text-color);

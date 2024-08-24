@@ -251,5 +251,10 @@ font-weight: 500;
   transition: all 500ms ease-in-out;
 }
 
-.techblog{
+.techblog_photo{
+  position: relative;
+  bottom:10vh;
+  margin: 0;
+  padding: 0;
+  width: 500px;
 }

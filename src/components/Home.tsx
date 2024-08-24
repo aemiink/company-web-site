@@ -11,7 +11,7 @@ import soc from '../assets/img/soc.svg'
 import psy from '../assets/img/psy.svg'
 import newapp from '../assets/img/napp.svg'
 import meta from '../assets/img/metaverse.svg'
-import tech from '../assets/img/techBlog.svg'
+import tech from '../assets/img/techBlog.png'
 import ContactUs from "./ContactUs";
 import axios from 'axios';
 
@@ -273,6 +273,7 @@ function Home() {
                         </CSSTransition>
                     ) : null
                 }
+                <img src={tech} className='techblog_photo'/> 
             </div>
             <ContactUs info={info} page={page} handleChangePage={handleChangePage} handleChangePage2={handleChangePage2} handleChangePage1={handleChangePage1} />
         </div>
