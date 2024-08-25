@@ -3,11 +3,13 @@ import companyLogo from '../assets/img/companylogo.svg'
 import search from '../assets/img/search.svg'
 import {NavLink, Router} from "react-router-dom";
 import '../assets/styles/navbar.css'
+import { Instagram } from '@mui/icons-material';
 
 function NavBar() {
     const [isOpen, setIsOpen] = useState(false);
     const [isSearching, setIsSearched] = useState(true);
     const [button, setButton] = useState("nav-bar")
+    const [area, setArea] = useState("")
 
     const handleSearching = () => {
         setIsSearched(!isSearching)
@@ -26,11 +28,11 @@ function NavBar() {
             <div className={`nav-list ${isOpen ? 'open' : ''}`}>
                 <ul>
                     <div>
-                        <li>About Us</li>
-                        <li >Services</li>
-                        <li>AppStore</li>
-                        <li>GameStore</li>
-                        <li>Pricing</li> 
+                        <li onClick={() => setArea('aboutUs')}>About Us</li>
+                        <li onClick={() => setArea('services')}>Services</li>
+                        <li onClick={() => setArea('as')}>AppStore</li>
+                        <li onClick={() => setArea('gs')}>GameStore</li>
+                        <li onClick={() => setArea('au')}>Pricing</li> 
                     </div>
                 </ul>
             </div>

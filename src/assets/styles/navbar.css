@@ -46,6 +46,7 @@
     text-align: center;
     list-style: none;
     gap:50px;
+    cursor: pointer;
 }
 
 .nav-last-area > button {
